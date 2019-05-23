@@ -1,6 +1,6 @@
 .posts-container-wrapper {
     height: 500px;
-    width: 47.9%;
+    width: 47.7%;
     margin: 5px auto;
   }
   .post-border {
@@ -29,4 +29,6 @@
   .likes-section{
       margin: 10px;
   }
-  
+  .time-stamp{
+      margin-left: 10px;
+  }

@@ -1,0 +1,15 @@
+.input-comment {
+    width: 638px;
+    height: 50px;
+}
+
+.user{
+    font-weight: bold;
+}
+.comment-text{
+    margin-left: 10px;
+}
+
+input{
+    border: 0 none transparent 
+}

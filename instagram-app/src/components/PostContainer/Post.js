@@ -1,7 +1,9 @@
 import React from 'react';
 import heart from "../../assests/heart.svg"
 import comment from "../../assests/comment.svg"
-// import CommentSection from "../CommentSection/CommentSection"
+import CommentSection from "../CommentSection/CommentSection"
+import CommentInput from "../CommentSection/CommentInput"
+
 const Post = props => {
     return (
         <div className="post-border">
@@ -33,8 +35,9 @@ const Post = props => {
             <div className="likes-section">
                 <p>{props.post.likes} likes</p>
             </div>
-            {/* <CommentSection comments={props.post.comments}/> */}
-            
+            <CommentSection comments={props.post.comments}/>
+            <p className="time-stamp">{props.post.timestamp}</p>
+            <CommentInput/>
         </div>
     )
 }
