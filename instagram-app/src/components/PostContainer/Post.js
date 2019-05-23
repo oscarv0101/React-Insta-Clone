@@ -1,6 +1,7 @@
 import React from 'react';
-
-
+import heart from "../../assests/heart.svg"
+import comment from "../../assests/comment.svg"
+// import CommentSection from "../CommentSection/CommentSection"
 const Post = props => {
     return (
         <div className="post-border">
@@ -19,6 +20,20 @@ const Post = props => {
                 className="post-image"
                 src={props.post.imageUrl}/>
             </div>
+            <div className="icons-section">
+                <img 
+                alt ="heart"
+                className="logos"
+                src={heart}/>
+                <img 
+                alt ="comment"
+                className="logos"
+                src={comment}/>
+            </div>
+            <div className="likes-section">
+                <p>{props.post.likes} likes</p>
+            </div>
+            {/* <CommentSection comments={props.post.comments}/> */}
             
         </div>
     )

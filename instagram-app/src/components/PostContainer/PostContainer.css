@@ -17,3 +17,16 @@
       width: 35px;
       margin: 15px;
   }
+  .icons-section{
+      display:flex;
+      
+  }
+  .logos{
+      width: 4%;
+      height: 10%;
+      margin: 10px;
+  }
+  .likes-section{
+      margin: 10px;
+  }
+  
