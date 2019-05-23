@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from '../PostContainer/Post';
+import "../PostContainer/PostContainer.css";
 
 const PostsContainer = props => {
     return(
