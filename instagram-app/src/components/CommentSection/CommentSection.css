@@ -13,3 +13,6 @@
 input{
     border: 0 none transparent 
 }
+.comment-form{
+    display: flex;
+}
