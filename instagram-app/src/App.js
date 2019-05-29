@@ -11,6 +11,10 @@ class App extends Component {
       posts: dummyData
     }
   }
+
+  changeImage = e => {
+    e.target.style.backgroundColor = "red"
+  }
     render(){
   return ( 
     <div className="App">

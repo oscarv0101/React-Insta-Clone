@@ -25,7 +25,7 @@ const Post = props => {
             <div className="icons-section">
                 <img 
                 alt ="heart"
-                className="logos"
+                className="logos heart"
                 src={heart}/>
                 <img 
                 alt ="comment"

@@ -12,5 +12,11 @@ const Comment = props => {
         </div>
     )
 }
+Comment.propTypes = {
+    comment: PropTypes.shape({
+      text: PropTypes.string,
+      username: PropTypes.string
+    })
+  };
 
 export default Comment;

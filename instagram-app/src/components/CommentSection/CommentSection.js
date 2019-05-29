@@ -13,7 +13,7 @@ class CommentSection extends Component {
 render(){
     return(
         <div>
-            {this.state.comments.map(c => <Comment comment={c}/>)}
+            {this.state.comments.map((c,i) => <Comment comment={c} key={i}/>)}
         </div>
     )
 }
