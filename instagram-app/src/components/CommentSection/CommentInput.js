@@ -3,9 +3,12 @@ import "../CommentSection/CommentSection.css"
 const CommentInput = props => {
     return (
         <div className="comment-input-wrapper">
-                <form className="comment-form">
-                    <input className="input-comment" type="text" placeholder="   Add a comment..."></input>
-                    <button className="input-button" onClick={props.button}>Post</button>
+                <form className="comment-form" onSubmit={props.addNewComment}>
+                    <input 
+                    className="input-comment" 
+                    type="text" placeholder="   Add a comment..." 
+                    onChange={props.changeComment}></input>
+                    <button className="input-button" onClick={props.addNewComment}>Post</button>
                 </form>
             </div>
     )
