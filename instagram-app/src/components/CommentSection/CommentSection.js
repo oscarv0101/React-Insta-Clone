@@ -6,11 +6,7 @@ class CommentSection extends Component {
     constructor(props){
         super(props)
         this.state = {
-            comments: [],
-            newComment: {
-               text: '' ,
-               username: "oscar"
-            }
+            comments: []
             
             
         }
@@ -20,24 +16,26 @@ class CommentSection extends Component {
             comments: this.props.comments
         })
     }
-
-    // componentDidMount(){
-    //     this.setState({
-    //     [...comments:]
-    //     })
-    // }
-    
-    
-    addNewComment = event => {
+    handleInput = event => {
+        this.setState({[event.target.name]: event.target.value})
+    }
+    handlePost = event => {
         event.preventDefault();
-      }
+        const newComment = {
+            username: "Guest",
+            text: ""
+        }
+        this.setState({
+            comments: [...this.props.comments, newComment], comment: ""
+        })
+    }
 
 render(){
     return(
         <div>
             {this.state.comments.map((c,i) => <Comment comment={c} key={i}/>)}
             <p className="time-stamp">{this.props.timestamp}</p>
-            <CommentInput button={this.buttonHandler} addNewComment={this.addNewComment}/>
+            <CommentInput handelInput={this.handleInput} handlePost={this.handlePost} />
         </div>
     )
 }
