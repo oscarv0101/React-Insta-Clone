@@ -24,6 +24,7 @@ const Post = props => {
             </div>
             <div className="icons-section">
                 <img 
+                onClick={props.heartClick}
                 alt ="heart"
                 className="logos heart"
                 src={heart}/>

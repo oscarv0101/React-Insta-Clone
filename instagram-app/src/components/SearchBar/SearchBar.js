@@ -6,7 +6,7 @@ import heart from "../../assests/heart.svg"
 import profile from "../../assests/profile.svg"
 import "../SearchBar/SearchBar.css"
 
-const SearchBar = () => {
+const SearchBar = props => {
     return(
     <div className="search-bar-wrapper">
         <div className="image-wrapper">
@@ -14,7 +14,9 @@ const SearchBar = () => {
             <img alt = "instagram-logo" src = {igtext} className="logo-image"/>
         </div>
         <div>
-            <input className="search-bar" type="text" placeholder="Search"/>
+            <form className="search" onSubmit={props.searchGram}>
+            <input className="search-bar" type="text" placeholder="Search" value={props.search} onChange={props.change} />
+            </form>
         </div>
         <div className="social-wrapper">
             <div className="social">
